@@ -1,0 +1,878 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F329EC230C726AEDF897093 /* Pods_walrus_assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345BF88552AE58ABC46FA1FA /* Pods_walrus_assignment.framework */; };
+		59621F2D2161A0C88BFC8BF0 /* Pods_walrus_assignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC435A65A59087FDC9DEE01 /* Pods_walrus_assignmentTests.framework */; };
+		63643F0F26F0AC6D00F15B70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63643F0E26F0AC6D00F15B70 /* AppDelegate.swift */; };
+		63643F1126F0AC6D00F15B70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63643F1026F0AC6D00F15B70 /* SceneDelegate.swift */; };
+		63643F1326F0AC6D00F15B70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63643F1226F0AC6D00F15B70 /* ViewController.swift */; };
+		63643F1626F0AC6D00F15B70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63643F1426F0AC6D00F15B70 /* Main.storyboard */; };
+		63643F1926F0AC6D00F15B70 /* walrus_assignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63643F1726F0AC6D00F15B70 /* walrus_assignment.xcdatamodeld */; };
+		63643F1B26F0AC7000F15B70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63643F1A26F0AC7000F15B70 /* Assets.xcassets */; };
+		63643F1E26F0AC7000F15B70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63643F1C26F0AC7000F15B70 /* LaunchScreen.storyboard */; };
+		63643F2926F0AC7000F15B70 /* walrus_assignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63643F2826F0AC7000F15B70 /* walrus_assignmentTests.swift */; };
+		63643F3426F0AC7000F15B70 /* walrus_assignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63643F3326F0AC7000F15B70 /* walrus_assignmentUITests.swift */; };
+		63643F4826F0B66800F15B70 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63643F4726F0B66800F15B70 /* ArticleModel.swift */; };
+		63643F4A26F0B6F100F15B70 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63643F4926F0B6F100F15B70 /* NetworkService.swift */; };
+		63643F4C26F0B7AE00F15B70 /* FetchNewsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63643F4B26F0B7AE00F15B70 /* FetchNewsStore.swift */; };
+		63643F4E26F0B82400F15B70 /* FetchNewsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63643F4D26F0B82400F15B70 /* FetchNewsManager.swift */; };
+		63643F5026F0BD8300F15B70 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63643F4F26F0BD8300F15B70 /* Dynamic.swift */; };
+		63643F5226F0C49F00F15B70 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63643F5126F0C49F00F15B70 /* RealmManager.swift */; };
+		63643F5426F0D30400F15B70 /* ViewArticlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63643F5326F0D30400F15B70 /* ViewArticlesViewModel.swift */; };
+		63643F5726F0F55E00F15B70 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63643F5526F0F55E00F15B70 /* CardTableViewCell.swift */; };
+		63643F5826F0F55E00F15B70 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63643F5626F0F55E00F15B70 /* CardTableViewCell.xib */; };
+		63643F5A26F1C80800F15B70 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63643F5926F1C80800F15B70 /* WebViewViewController.swift */; };
+		63643F5D26F202FD00F15B70 /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63643F5C26F202FD00F15B70 /* CommonUtils.swift */; };
+		63643F6626F3569000F15B70 /* HeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63643F6426F3569000F15B70 /* HeaderViewCell.swift */; };
+		63643F6726F3569000F15B70 /* HeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63643F6526F3569000F15B70 /* HeaderViewCell.xib */; };
+		63643F6926F3652600F15B70 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63643F6826F3652600F15B70 /* AnimationViewController.swift */; };
+		63643F6B26F37D5200F15B70 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63643F6A26F37D5100F15B70 /* Colors.swift */; };
+		638E27D326F3B5EB000C191D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 638E27D226F3B5EB000C191D /* Realm */; };
+		638E27D526F3B5EB000C191D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 638E27D426F3B5EB000C191D /* RealmSwift */; };
+		EF20CD27AB190DB51E8D2C85 /* Pods_walrus_assignment_walrus_assignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24022D02D36C563DA49F2BB7 /* Pods_walrus_assignment_walrus_assignmentUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63643F2526F0AC7000F15B70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63643F0326F0AC6D00F15B70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63643F0A26F0AC6D00F15B70;
+			remoteInfo = walrus_assignment;
+		};
+		63643F3026F0AC7000F15B70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63643F0326F0AC6D00F15B70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63643F0A26F0AC6D00F15B70;
+			remoteInfo = walrus_assignment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0711BE8DAD9FFD95BE424A4F /* Pods-walrus_assignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walrus_assignmentTests.release.xcconfig"; path = "Target Support Files/Pods-walrus_assignmentTests/Pods-walrus_assignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		19C7FB37896C5183B1688D1D /* Pods-walrus_assignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walrus_assignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-walrus_assignmentTests/Pods-walrus_assignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		24022D02D36C563DA49F2BB7 /* Pods_walrus_assignment_walrus_assignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_walrus_assignment_walrus_assignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D5C64A3DB5F48250257218E /* Pods-walrus_assignment-walrus_assignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walrus_assignment-walrus_assignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-walrus_assignment-walrus_assignmentUITests/Pods-walrus_assignment-walrus_assignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		345BF88552AE58ABC46FA1FA /* Pods_walrus_assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_walrus_assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63643F0B26F0AC6D00F15B70 /* walrus_assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = walrus_assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63643F0E26F0AC6D00F15B70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63643F1026F0AC6D00F15B70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		63643F1226F0AC6D00F15B70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63643F1526F0AC6D00F15B70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63643F1826F0AC6D00F15B70 /* walrus_assignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = walrus_assignment.xcdatamodel; sourceTree = "<group>"; };
+		63643F1A26F0AC7000F15B70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63643F1D26F0AC7000F15B70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63643F1F26F0AC7000F15B70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63643F2426F0AC7000F15B70 /* walrus_assignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = walrus_assignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63643F2826F0AC7000F15B70 /* walrus_assignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walrus_assignmentTests.swift; sourceTree = "<group>"; };
+		63643F2A26F0AC7000F15B70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63643F2F26F0AC7000F15B70 /* walrus_assignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = walrus_assignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63643F3326F0AC7000F15B70 /* walrus_assignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walrus_assignmentUITests.swift; sourceTree = "<group>"; };
+		63643F3526F0AC7000F15B70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63643F4726F0B66800F15B70 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		63643F4926F0B6F100F15B70 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		63643F4B26F0B7AE00F15B70 /* FetchNewsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchNewsStore.swift; sourceTree = "<group>"; };
+		63643F4D26F0B82400F15B70 /* FetchNewsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchNewsManager.swift; sourceTree = "<group>"; };
+		63643F4F26F0BD8300F15B70 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		63643F5126F0C49F00F15B70 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		63643F5326F0D30400F15B70 /* ViewArticlesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewArticlesViewModel.swift; sourceTree = "<group>"; };
+		63643F5526F0F55E00F15B70 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		63643F5626F0F55E00F15B70 /* CardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
+		63643F5926F1C80800F15B70 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
+		63643F5C26F202FD00F15B70 /* CommonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
+		63643F6426F3569000F15B70 /* HeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewCell.swift; sourceTree = "<group>"; };
+		63643F6526F3569000F15B70 /* HeaderViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderViewCell.xib; sourceTree = "<group>"; };
+		63643F6826F3652600F15B70 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		63643F6A26F37D5100F15B70 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		66D2E632245E5A161376A578 /* Pods-walrus_assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walrus_assignment.debug.xcconfig"; path = "Target Support Files/Pods-walrus_assignment/Pods-walrus_assignment.debug.xcconfig"; sourceTree = "<group>"; };
+		70E8393C451495FD9CEEECA3 /* Pods-walrus_assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walrus_assignment.release.xcconfig"; path = "Target Support Files/Pods-walrus_assignment/Pods-walrus_assignment.release.xcconfig"; sourceTree = "<group>"; };
+		D120FEEB12C8A19431C10C6A /* Pods-walrus_assignment-walrus_assignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walrus_assignment-walrus_assignmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-walrus_assignment-walrus_assignmentUITests/Pods-walrus_assignment-walrus_assignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EEC435A65A59087FDC9DEE01 /* Pods_walrus_assignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_walrus_assignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63643F0826F0AC6D00F15B70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638E27D526F3B5EB000C191D /* RealmSwift in Frameworks */,
+				638E27D326F3B5EB000C191D /* Realm in Frameworks */,
+				3F329EC230C726AEDF897093 /* Pods_walrus_assignment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63643F2126F0AC7000F15B70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59621F2D2161A0C88BFC8BF0 /* Pods_walrus_assignmentTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63643F2C26F0AC7000F15B70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF20CD27AB190DB51E8D2C85 /* Pods_walrus_assignment_walrus_assignmentUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		506ED356902FE278D293B929 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66D2E632245E5A161376A578 /* Pods-walrus_assignment.debug.xcconfig */,
+				70E8393C451495FD9CEEECA3 /* Pods-walrus_assignment.release.xcconfig */,
+				D120FEEB12C8A19431C10C6A /* Pods-walrus_assignment-walrus_assignmentUITests.debug.xcconfig */,
+				2D5C64A3DB5F48250257218E /* Pods-walrus_assignment-walrus_assignmentUITests.release.xcconfig */,
+				19C7FB37896C5183B1688D1D /* Pods-walrus_assignmentTests.debug.xcconfig */,
+				0711BE8DAD9FFD95BE424A4F /* Pods-walrus_assignmentTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		63643F0226F0AC6D00F15B70 = {
+			isa = PBXGroup;
+			children = (
+				63643F0D26F0AC6D00F15B70 /* walrus_assignment */,
+				63643F2726F0AC7000F15B70 /* walrus_assignmentTests */,
+				63643F3226F0AC7000F15B70 /* walrus_assignmentUITests */,
+				63643F0C26F0AC6D00F15B70 /* Products */,
+				506ED356902FE278D293B929 /* Pods */,
+				69433C9C9F68F0E3778DEAFC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		63643F0C26F0AC6D00F15B70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63643F0B26F0AC6D00F15B70 /* walrus_assignment.app */,
+				63643F2426F0AC7000F15B70 /* walrus_assignmentTests.xctest */,
+				63643F2F26F0AC7000F15B70 /* walrus_assignmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63643F0D26F0AC6D00F15B70 /* walrus_assignment */ = {
+			isa = PBXGroup;
+			children = (
+				63643F5B26F202E700F15B70 /* HelperClasses */,
+				63643F4626F0B4D500F15B70 /* Store */,
+				63643F4526F0B4CC00F15B70 /* Manager */,
+				63643F4426F0B4C100F15B70 /* NetworkService */,
+				63643F4326F0B4B700F15B70 /* ViewModel */,
+				63643F4226F0B4AD00F15B70 /* View */,
+				63643F4126F0B4A500F15B70 /* Model */,
+				63643F0E26F0AC6D00F15B70 /* AppDelegate.swift */,
+				63643F1026F0AC6D00F15B70 /* SceneDelegate.swift */,
+				63643F1A26F0AC7000F15B70 /* Assets.xcassets */,
+				63643F1C26F0AC7000F15B70 /* LaunchScreen.storyboard */,
+				63643F1F26F0AC7000F15B70 /* Info.plist */,
+				63643F1726F0AC6D00F15B70 /* walrus_assignment.xcdatamodeld */,
+			);
+			path = walrus_assignment;
+			sourceTree = "<group>";
+		};
+		63643F2726F0AC7000F15B70 /* walrus_assignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				63643F2826F0AC7000F15B70 /* walrus_assignmentTests.swift */,
+				63643F2A26F0AC7000F15B70 /* Info.plist */,
+			);
+			path = walrus_assignmentTests;
+			sourceTree = "<group>";
+		};
+		63643F3226F0AC7000F15B70 /* walrus_assignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				63643F3326F0AC7000F15B70 /* walrus_assignmentUITests.swift */,
+				63643F3526F0AC7000F15B70 /* Info.plist */,
+			);
+			path = walrus_assignmentUITests;
+			sourceTree = "<group>";
+		};
+		63643F4126F0B4A500F15B70 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63643F4726F0B66800F15B70 /* ArticleModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63643F4226F0B4AD00F15B70 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63643F1426F0AC6D00F15B70 /* Main.storyboard */,
+				63643F1226F0AC6D00F15B70 /* ViewController.swift */,
+				63643F6826F3652600F15B70 /* AnimationViewController.swift */,
+				63643F5526F0F55E00F15B70 /* CardTableViewCell.swift */,
+				63643F5626F0F55E00F15B70 /* CardTableViewCell.xib */,
+				63643F5926F1C80800F15B70 /* WebViewViewController.swift */,
+				63643F6426F3569000F15B70 /* HeaderViewCell.swift */,
+				63643F6526F3569000F15B70 /* HeaderViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		63643F4326F0B4B700F15B70 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				63643F4F26F0BD8300F15B70 /* Dynamic.swift */,
+				63643F5326F0D30400F15B70 /* ViewArticlesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		63643F4426F0B4C100F15B70 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				63643F4926F0B6F100F15B70 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		63643F4526F0B4CC00F15B70 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				63643F4D26F0B82400F15B70 /* FetchNewsManager.swift */,
+				63643F5126F0C49F00F15B70 /* RealmManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		63643F4626F0B4D500F15B70 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				63643F4B26F0B7AE00F15B70 /* FetchNewsStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		63643F5B26F202E700F15B70 /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				63643F5C26F202FD00F15B70 /* CommonUtils.swift */,
+				63643F6A26F37D5100F15B70 /* Colors.swift */,
+			);
+			path = HelperClasses;
+			sourceTree = "<group>";
+		};
+		69433C9C9F68F0E3778DEAFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				345BF88552AE58ABC46FA1FA /* Pods_walrus_assignment.framework */,
+				24022D02D36C563DA49F2BB7 /* Pods_walrus_assignment_walrus_assignmentUITests.framework */,
+				EEC435A65A59087FDC9DEE01 /* Pods_walrus_assignmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63643F0A26F0AC6D00F15B70 /* walrus_assignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63643F3826F0AC7000F15B70 /* Build configuration list for PBXNativeTarget "walrus_assignment" */;
+			buildPhases = (
+				72681AA02B60D275897A80D1 /* [CP] Check Pods Manifest.lock */,
+				63643F0726F0AC6D00F15B70 /* Sources */,
+				63643F0826F0AC6D00F15B70 /* Frameworks */,
+				63643F0926F0AC6D00F15B70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = walrus_assignment;
+			packageProductDependencies = (
+				638E27D226F3B5EB000C191D /* Realm */,
+				638E27D426F3B5EB000C191D /* RealmSwift */,
+			);
+			productName = walrus_assignment;
+			productReference = 63643F0B26F0AC6D00F15B70 /* walrus_assignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63643F2326F0AC7000F15B70 /* walrus_assignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63643F3B26F0AC7000F15B70 /* Build configuration list for PBXNativeTarget "walrus_assignmentTests" */;
+			buildPhases = (
+				9469D4D09204B047A88293F8 /* [CP] Check Pods Manifest.lock */,
+				63643F2026F0AC7000F15B70 /* Sources */,
+				63643F2126F0AC7000F15B70 /* Frameworks */,
+				63643F2226F0AC7000F15B70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63643F2626F0AC7000F15B70 /* PBXTargetDependency */,
+			);
+			name = walrus_assignmentTests;
+			productName = walrus_assignmentTests;
+			productReference = 63643F2426F0AC7000F15B70 /* walrus_assignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		63643F2E26F0AC7000F15B70 /* walrus_assignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63643F3E26F0AC7000F15B70 /* Build configuration list for PBXNativeTarget "walrus_assignmentUITests" */;
+			buildPhases = (
+				3C0A37C5C94A462FD78A28E5 /* [CP] Check Pods Manifest.lock */,
+				63643F2B26F0AC7000F15B70 /* Sources */,
+				63643F2C26F0AC7000F15B70 /* Frameworks */,
+				63643F2D26F0AC7000F15B70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63643F3126F0AC7000F15B70 /* PBXTargetDependency */,
+			);
+			name = walrus_assignmentUITests;
+			productName = walrus_assignmentUITests;
+			productReference = 63643F2F26F0AC7000F15B70 /* walrus_assignmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63643F0326F0AC6D00F15B70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					63643F0A26F0AC6D00F15B70 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					63643F2326F0AC7000F15B70 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 63643F0A26F0AC6D00F15B70;
+					};
+					63643F2E26F0AC7000F15B70 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 63643F0A26F0AC6D00F15B70;
+					};
+				};
+			};
+			buildConfigurationList = 63643F0626F0AC6D00F15B70 /* Build configuration list for PBXProject "walrus_assignment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63643F0226F0AC6D00F15B70;
+			packageReferences = (
+				638E27D126F3B5EA000C191D /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
+			productRefGroup = 63643F0C26F0AC6D00F15B70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63643F0A26F0AC6D00F15B70 /* walrus_assignment */,
+				63643F2326F0AC7000F15B70 /* walrus_assignmentTests */,
+				63643F2E26F0AC7000F15B70 /* walrus_assignmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63643F0926F0AC6D00F15B70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63643F1E26F0AC7000F15B70 /* LaunchScreen.storyboard in Resources */,
+				63643F1B26F0AC7000F15B70 /* Assets.xcassets in Resources */,
+				63643F1626F0AC6D00F15B70 /* Main.storyboard in Resources */,
+				63643F6726F3569000F15B70 /* HeaderViewCell.xib in Resources */,
+				63643F5826F0F55E00F15B70 /* CardTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63643F2226F0AC7000F15B70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63643F2D26F0AC7000F15B70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0A37C5C94A462FD78A28E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-walrus_assignment-walrus_assignmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72681AA02B60D275897A80D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-walrus_assignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9469D4D09204B047A88293F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-walrus_assignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63643F0726F0AC6D00F15B70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63643F1926F0AC6D00F15B70 /* walrus_assignment.xcdatamodeld in Sources */,
+				63643F4826F0B66800F15B70 /* ArticleModel.swift in Sources */,
+				63643F6626F3569000F15B70 /* HeaderViewCell.swift in Sources */,
+				63643F6B26F37D5200F15B70 /* Colors.swift in Sources */,
+				63643F5426F0D30400F15B70 /* ViewArticlesViewModel.swift in Sources */,
+				63643F1326F0AC6D00F15B70 /* ViewController.swift in Sources */,
+				63643F5026F0BD8300F15B70 /* Dynamic.swift in Sources */,
+				63643F4E26F0B82400F15B70 /* FetchNewsManager.swift in Sources */,
+				63643F6926F3652600F15B70 /* AnimationViewController.swift in Sources */,
+				63643F0F26F0AC6D00F15B70 /* AppDelegate.swift in Sources */,
+				63643F5726F0F55E00F15B70 /* CardTableViewCell.swift in Sources */,
+				63643F5A26F1C80800F15B70 /* WebViewViewController.swift in Sources */,
+				63643F4A26F0B6F100F15B70 /* NetworkService.swift in Sources */,
+				63643F5226F0C49F00F15B70 /* RealmManager.swift in Sources */,
+				63643F1126F0AC6D00F15B70 /* SceneDelegate.swift in Sources */,
+				63643F5D26F202FD00F15B70 /* CommonUtils.swift in Sources */,
+				63643F4C26F0B7AE00F15B70 /* FetchNewsStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63643F2026F0AC7000F15B70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63643F2926F0AC7000F15B70 /* walrus_assignmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63643F2B26F0AC7000F15B70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63643F3426F0AC7000F15B70 /* walrus_assignmentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63643F2626F0AC7000F15B70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63643F0A26F0AC6D00F15B70 /* walrus_assignment */;
+			targetProxy = 63643F2526F0AC7000F15B70 /* PBXContainerItemProxy */;
+		};
+		63643F3126F0AC7000F15B70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63643F0A26F0AC6D00F15B70 /* walrus_assignment */;
+			targetProxy = 63643F3026F0AC7000F15B70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63643F1426F0AC6D00F15B70 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63643F1526F0AC6D00F15B70 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63643F1C26F0AC7000F15B70 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63643F1D26F0AC7000F15B70 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63643F3626F0AC7000F15B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		63643F3726F0AC7000F15B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63643F3926F0AC7000F15B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66D2E632245E5A161376A578 /* Pods-walrus_assignment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = walrus_assignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.walrus-assignment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63643F3A26F0AC7000F15B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70E8393C451495FD9CEEECA3 /* Pods-walrus_assignment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = walrus_assignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.walrus-assignment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		63643F3C26F0AC7000F15B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19C7FB37896C5183B1688D1D /* Pods-walrus_assignmentTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = walrus_assignmentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.walrus-assignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/walrus_assignment.app/walrus_assignment";
+			};
+			name = Debug;
+		};
+		63643F3D26F0AC7000F15B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0711BE8DAD9FFD95BE424A4F /* Pods-walrus_assignmentTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = walrus_assignmentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.walrus-assignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/walrus_assignment.app/walrus_assignment";
+			};
+			name = Release;
+		};
+		63643F3F26F0AC7000F15B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D120FEEB12C8A19431C10C6A /* Pods-walrus_assignment-walrus_assignmentUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = walrus_assignmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.walrus-assignmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = walrus_assignment;
+			};
+			name = Debug;
+		};
+		63643F4026F0AC7000F15B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D5C64A3DB5F48250257218E /* Pods-walrus_assignment-walrus_assignmentUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = walrus_assignmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.walrus-assignmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = walrus_assignment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63643F0626F0AC6D00F15B70 /* Build configuration list for PBXProject "walrus_assignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63643F3626F0AC7000F15B70 /* Debug */,
+				63643F3726F0AC7000F15B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63643F3826F0AC7000F15B70 /* Build configuration list for PBXNativeTarget "walrus_assignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63643F3926F0AC7000F15B70 /* Debug */,
+				63643F3A26F0AC7000F15B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63643F3B26F0AC7000F15B70 /* Build configuration list for PBXNativeTarget "walrus_assignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63643F3C26F0AC7000F15B70 /* Debug */,
+				63643F3D26F0AC7000F15B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63643F3E26F0AC7000F15B70 /* Build configuration list for PBXNativeTarget "walrus_assignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63643F3F26F0AC7000F15B70 /* Debug */,
+				63643F4026F0AC7000F15B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		638E27D126F3B5EA000C191D /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		638E27D226F3B5EB000C191D /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 638E27D126F3B5EA000C191D /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		638E27D426F3B5EB000C191D /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 638E27D126F3B5EA000C191D /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		63643F1726F0AC6D00F15B70 /* walrus_assignment.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				63643F1826F0AC6D00F15B70 /* walrus_assignment.xcdatamodel */,
+			);
+			currentVersion = 63643F1826F0AC6D00F15B70 /* walrus_assignment.xcdatamodel */;
+			path = walrus_assignment.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 63643F0326F0AC6D00F15B70 /* Project object */;
+}

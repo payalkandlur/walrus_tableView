@@ -1,0 +1,6 @@
+framework module Pods_walrus_assignment_walrus_assignmentUITests {
+  umbrella header "Pods-walrus_assignment-walrus_assignmentUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
