@@ -35,8 +35,6 @@ class NetworkService {
                 let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
                     DispatchQueue.main.async {
                         if error == nil {
-                            let str = String(decoding: data!, as: UTF8.self)
-                            print(str)
                             if let responseData = data, let utf8Text = String(data: responseData, encoding: .utf8) {
                                 do {
                                     if !utf8Text.isEmpty {
@@ -51,7 +49,6 @@ class NetworkService {
                                         completion(nil, error)
                                     }
                                 } catch let error as NSError {
-                                    print(error)
                                     completion(nil, error)
                                 }
                                 

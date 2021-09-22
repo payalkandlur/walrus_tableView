@@ -21,21 +21,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         //register custom table view cell
         tableView.register(UINib(nibName: "CardTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         tableView.register(UINib(nibName: "HeaderViewCell", bundle: nil), forCellReuseIdentifier: "HeaderViewCell")
-        
+
+        //Fetch data from the API if Realm is empty
+        self.array = RealmManager.sharedManager.fetchObjects() ?? []
+        if(self.array.isEmpty) {
+            viewModel.getArticles(urlString: "https://newsapi.org/v2/top-headlines?country=us&apiKey=3e6b52f54a304686904efad1b7e126b9")
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+ 
         self.hideNavBar()
         self.registerViewModelListeners()
         //show activity indicator before fetching data
-        self.overlayView.isHidden = false
-        CommonUtils.sharedInstance.showActivityIndicatory(self.view)
-        
-        //Fetch data from the API
-        viewModel.getArticles(urlString: "https://newsapi.org/v2/top-headlines?country=us&apiKey=3e6b52f54a304686904efad1b7e126b9")
-        
+        self.overlayView.isHidden = true
         tableView.separatorStyle = .none
+        
     }
     
     func hideNavBar() {
@@ -48,16 +53,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             if success {
                 //hide activity indicator after fetching is success
                 CommonUtils.sharedInstance.hideActivityIndicator()
-                self.array = viewModel.array!
+                self.array = viewModel.array ?? []
+                DispatchQueue.main.async {
                 self.tableView.reloadData()
-                self.overlayView.isHidden = true
-                
+                }
                 
             } else {
-                var data = RealmManager.sharedManager.fetchObjects()
-                print(data)
                 self.overlayView.isHidden = true
-                self.array = data ?? []
+                self.array = RealmManager.sharedManager.fetchObjects() ?? []
                 self.tableView.reloadData()
                 print("Error")
             }
@@ -97,18 +100,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             cell.authorLabel.text = array[indexPath.row].author
             cell.titleLabel.text = array[indexPath.row].title
-            let url = URL(string: (array[indexPath.row].urlToImage) ?? "")
+            
             cell.descLabel.text = array[indexPath.row].articleDescription
             self.urlVal = URL(string: (array[indexPath.row].url) ?? "")
             self.titleVal = array[indexPath.row].title
-            if let urls = url {
-                let data = try? Data(contentsOf: urls)
-                if let img = data {
-                    cell.imgView?.image = UIImage(data: img)
+                let url = URL(string: (self.array[indexPath.row].urlToImage) ?? "")
+                if let urls = url {
+                    let data = try? Data(contentsOf: urls)
+                    DispatchQueue.main.async {
+                    if let img = data {
+                        cell.imgView?.image = UIImage(data: img)
+                    }
+                    
                 }
-                
-                
             }
+            
             
             //set button action
             cell.setSeeNewsActionType {

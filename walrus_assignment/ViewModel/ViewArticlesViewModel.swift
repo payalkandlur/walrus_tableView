@@ -8,12 +8,14 @@
 import UIKit
 
 class ViewArticlesViewModel {
-
-        static let sharedInstance = ViewArticlesViewModel()
-        var isFetchArticlesSuccess: Dynamic<Bool> = Dynamic(false)
-        var errorMessage = ""
-        var array : [ArticleModel]?
-        //MARK: Load the articles
+    
+    static let sharedInstance = ViewArticlesViewModel()
+    var isFetchArticlesSuccess: Dynamic<Bool> = Dynamic(false)
+    var isRealmFetchArticlesSuccess: Dynamic<Bool> = Dynamic(false)
+    var errorMessage = ""
+    var array : [ArticleModel]?
+    var realmData: [ArticleModel]?
+    //MARK: Load the articles
         /// This function will get the bootstrap data from Bootstrap Manager.
         ///
         /// It will set the reponse to bootstrapInfo and updateType if we have a proper
@@ -32,10 +34,8 @@ class ViewArticlesViewModel {
             }
         }
     
-//    func getFromRealm() {
-//        RealmManager.sharedManager.fetchObjects(object: <#T##Object.Type#>) {
-//            
-//        }
-//    }
+    func getFromRealm() {
+        realmData = RealmManager.sharedManager.fetchObjects()
+    }
 }
 

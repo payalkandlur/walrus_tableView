@@ -18,10 +18,12 @@ class RealmManager: NSObject {
     func addObjects(object: [Object], completion:@escaping (_ done:Bool ) -> Void) {
         let realm = try! Realm()
         do {
+            
             try realm.write {
                 
                 realm.add(object)
                 realm.refresh()
+            
             }
             
             completion(true)
